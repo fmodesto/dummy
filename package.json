@@ -1,0 +1,35 @@
+{
+  "name": "parcel-sandbox",
+  "version": "1.0.0",
+  "description": "Simple Parcel Sandbox",
+  "main": "index.html",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "redux": "4.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "deep-freeze": "0.0.1",
+    "eslint": "^5.5.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.5.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "alias": {
+    "src": "./src"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}
